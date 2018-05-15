@@ -1,4 +1,4 @@
-window.onload = function(){
+﻿window.onload = function(){
     for (var i = 0; i <9; i++){
         document.getElementById('game').innerHTML+='<div class="block"></div>';
     }
@@ -11,7 +11,7 @@ window.onload = function(){
             if (step % 2 == 0){
                 event.target.innerHTML = '✕';
             } else {
-                event.target.innerHTML = '⭕'; 
+                event.target.innerHTML = 'O'; 
             }
             step++;
             checkWinner();
@@ -62,42 +62,42 @@ window.onload = function(){
             alert("X won!");
         }
 //O checking
-        else if (allBlocks[0].innerHTML == '⭕' && allBlocks[1].innerHTML == '⭕' && allBlocks[2].innerHTML == '⭕'){
+        else if (allBlocks[0].innerHTML == 'O' && allBlocks[1].innerHTML == 'O' && allBlocks[2].innerHTML == 'O'){
             allBlocks[0].style.color = "red";
             allBlocks[1].style.color = "red";
             allBlocks[2].style.color = "red";
             alert("O won!");
-        } else if (allBlocks[3].innerHTML == '⭕' && allBlocks[4].innerHTML == '⭕' && allBlocks[5].innerHTML == '⭕') {
+        } else if (allBlocks[3].innerHTML == 'O' && allBlocks[4].innerHTML == 'O' && allBlocks[5].innerHTML == 'O') {
             allBlocks[3].style.color = "red";
             allBlocks[4].style.color = "red";
             allBlocks[5].style.color = "red";
             alert("O won!");
-        } else if (allBlocks[6].innerHTML == '⭕' && allBlocks[7].innerHTML == '⭕' && allBlocks[8].innerHTML == '⭕') {
+        } else if (allBlocks[6].innerHTML == 'O' && allBlocks[7].innerHTML == 'O' && allBlocks[8].innerHTML == 'O') {
             allBlocks[6].style.color = "red";
             allBlocks[7].style.color = "red";
             allBlocks[8].style.color = "red";
             alert("O won!");
-        } else if (allBlocks[0].innerHTML == '⭕' && allBlocks[3].innerHTML == '⭕' && allBlocks[6].innerHTML == '⭕') {
+        } else if (allBlocks[0].innerHTML == 'O' && allBlocks[3].innerHTML == 'O' && allBlocks[6].innerHTML == 'O') {
             allBlocks[0].style.color = "red";
             allBlocks[3].style.color = "red";
             allBlocks[6].style.color = "red";
             alert("O won!");
-        } else if (allBlocks[1].innerHTML == '⭕' && allBlocks[4].innerHTML == '⭕' && allBlocks[7].innerHTML == '⭕') {
+        } else if (allBlocks[1].innerHTML == 'O' && allBlocks[4].innerHTML == 'O' && allBlocks[7].innerHTML == 'O') {
             allBlocks[1].style.color = "red";
             allBlocks[4].style.color = "red";
             allBlocks[7].style.color = "red";
             alert("O won!");
-        } else if (allBlocks[2].innerHTML == '⭕' && allBlocks[5].innerHTML == '⭕' && allBlocks[8].innerHTML == '⭕') {
+        } else if (allBlocks[2].innerHTML == 'O' && allBlocks[5].innerHTML == 'O' && allBlocks[8].innerHTML == 'O') {
             allBlocks[2].style.color = "red";
             allBlocks[5].style.color = "red";
             allBlocks[8].style.color = "red";            
             alert("O won!");
-        } else if (allBlocks[0].innerHTML == '⭕' && allBlocks[4].innerHTML == '⭕' && allBlocks[8].innerHTML == '⭕') {
+        } else if (allBlocks[0].innerHTML == 'O' && allBlocks[4].innerHTML == 'O' && allBlocks[8].innerHTML == 'O') {
             allBlocks[0].style.color = "red";
             allBlocks[4].style.color = "red";
             allBlocks[8].style.color = "red";
             alert("O won!");
-        } else if (allBlocks[2].innerHTML == '⭕' && allBlocks[4].innerHTML == '⭕' && allBlocks[6].innerHTML == '⭕') {
+        } else if (allBlocks[2].innerHTML == 'O' && allBlocks[4].innerHTML == 'O' && allBlocks[6].innerHTML == 'O') {
             allBlocks[2].style.color = "red";
             allBlocks[4].style.color = "red";
             allBlocks[6].style.color = "red";
